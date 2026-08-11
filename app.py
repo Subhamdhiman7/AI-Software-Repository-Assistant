@@ -431,6 +431,41 @@ st.markdown(
 [data-testid="stExpander"] div {
     color: #172033 !important;
 }
+/* =========================================================
+   CODE TEXT VISIBILITY FIX
+   ========================================================= */
+
+code {
+    color: #172033 !important;
+    background-color: #EEF2F7 !important;
+    font-weight: 600 !important;
+    border-radius: 6px !important;
+    padding: 2px 6px !important;
+}
+
+/* Inline code inside normal markdown */
+.stMarkdown code {
+    color: #172033 !important;
+    background-color: #EEF2F7 !important;
+}
+
+/* Code inside chat responses */
+[data-testid="stChatMessage"] code {
+    color: #172033 !important;
+    background-color: #EEF2F7 !important;
+}
+
+/* Code blocks */
+pre {
+    background-color: #F3F4F6 !important;
+    color: #172033 !important;
+    border-radius: 8px !important;
+}
+
+pre code {
+    background-color: transparent !important;
+    color: #172033 !important;
+}
 </style>
 """,
 unsafe_allow_html=True
