@@ -360,7 +360,77 @@ st.markdown(
     font-size: 12px;
     padding: 30px 0 10px;
 }
+/* =========================================================
+   CHAT TEXT VISIBILITY FIX
+   ========================================================= */
 
+/* Chat input */
+[data-testid="stChatInput"] textarea {
+    color: #172033 !important;
+    -webkit-text-fill-color: #172033 !important;
+    background-color: #FFFFFF !important;
+    caret-color: #172033 !important;
+}
+
+[data-testid="stChatInput"] textarea::placeholder {
+    color: #9CA3AF !important;
+    -webkit-text-fill-color: #9CA3AF !important;
+    opacity: 1 !important;
+}
+
+/* Chat input container */
+[data-testid="stChatInput"] {
+    color: #172033 !important;
+}
+
+/* User / assistant chat text */
+[data-testid="stChatMessage"] {
+    color: #172033 !important;
+}
+
+[data-testid="stChatMessage"] p,
+[data-testid="stChatMessage"] span,
+[data-testid="stChatMessage"] li,
+[data-testid="stChatMessage"] div {
+    color: #172033 !important;
+}
+
+/* Markdown inside chat messages */
+[data-testid="stChatMessage"] h1,
+[data-testid="stChatMessage"] h2,
+[data-testid="stChatMessage"] h3,
+[data-testid="stChatMessage"] h4,
+[data-testid="stChatMessage"] h5,
+[data-testid="stChatMessage"] h6 {
+    color: #172033 !important;
+}
+
+/* Links */
+[data-testid="stChatMessage"] a {
+    color: #2563EB !important;
+}
+
+/* Code blocks */
+[data-testid="stChatMessage"] code {
+    color: #172033 !important;
+}
+
+/* Inline code / source references */
+[data-testid="stChatMessage"] pre {
+    color: #172033 !important;
+    background-color: #F3F4F6 !important;
+}
+
+/* Expander text such as "View Sources" */
+[data-testid="stExpander"] {
+    color: #172033 !important;
+}
+
+[data-testid="stExpander"] p,
+[data-testid="stExpander"] span,
+[data-testid="stExpander"] div {
+    color: #172033 !important;
+}
 </style>
 """,
 unsafe_allow_html=True
