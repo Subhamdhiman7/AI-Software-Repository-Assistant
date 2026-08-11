@@ -5,3 +5,4 @@ langchain-google-genai
 gitpython
 chromadb
 langchain-chroma
+langchain-text-splitters
